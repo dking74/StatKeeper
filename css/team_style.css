@@ -1,0 +1,312 @@
+/* This styling is to adjust the size of the background picture */
+html, body {
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+/* This is to place background image appropriately on screen */
+.background {
+    margin: -10px;
+    background-image: url(../img/baseball_background.jpg);
+    min-height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 75px;
+}
+
+/* This is the main class for screen content */
+.main_interaction_div {
+    min-height: 500px;
+    width: 85%;
+    margin: 0 auto;
+    background-color: white;
+    border: 5px solid darkblue;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    padding-top: 5px;
+}
+
+#sign_out_button:hover,
+#account_button:hover {
+    color: blue;
+    background-color: white;
+}
+
+/* The span holding the company header (self-defined) */
+.company_symbol {
+    text-shadow: 5px 4px lightblue;
+    font-size: 60px;
+    color: darkblue;
+    text-align: center;
+}
+
+/* Every element inside span, which includes account option labels, need to be placed in top right of screen */
+.account_opt_span {
+    background-color: darkgray;
+    padding: 10px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: blue;
+    border: 1px solid black;
+    outline-width: thick;
+}
+
+/* Label inside account option span to be spaced out*/
+.account_opt_span label {
+    margin: 3px;
+}
+
+/* Div for viewing all information for an entity */
+.entity_viewing_div {
+    margin-top: 10px;
+    text-align: right;
+}
+
+/* The fieldset containing all info */
+.fieldset_team {
+    min-height: 300px;
+    border: 2px solid darkblue;
+}
+
+/* The legend inside of a fieldset */
+.fieldset_legend {
+    text-align: left;
+    font-size: 30px;
+    color: darkblue;
+}
+
+/* Button used to add entities */
+.add_button {
+    background-color: darkblue;
+    color: white;
+    margin-bottom: 0px;
+    border: 2px solid black;
+    height: 30px;
+    font-size: 14px;
+}
+
+/* When add or delete button is disabled, change coloring */
+.add_button:disabled,
+.delete_button:disabled {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+}
+
+/* Switch coloring scheme when hovering over add button when enabled */
+.add_button:hover:enabled {
+    background-color: white;
+    color: darkblue;
+}
+
+/* Delete button should be red with white coloring */
+.delete_button {
+    background-color: red;
+    color: white;
+    margin-bottom: 0px;
+    border: 2px solid black;
+    height: 30px;
+    font-size: 14px;
+}
+
+/* Hovering over delete button when enabled should make button white with red color */
+.delete_button:hover:enabled {
+    background-color: white;
+    color: red;
+}
+
+/* Every element in div should be left aligned and a small border */
+.adding_entity_div {
+    text-align: left;
+    border: 2px solid darkblue;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+
+/* The heading element should be dark blue and underlined */
+.adding_entity_div h1 {
+    color: darkblue;
+    text-decoration: underline;
+}
+
+/* Every row span should be block element to have its own line */
+.row_span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Span elements in row-span should take up 30% of space and be 40px tall */
+.row_span span {
+    display: inline-block;
+    width: 375px;
+    margin-right: 50px;
+    height: 40px;
+}
+
+/* Labels in row_span class should have input element 20px to the right */
+.row_span label {
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* All input elements on page should have light border and go towards edge of span */
+.row_span input, .row_span select {
+    border: 1px solid darkblue;
+    float: right;
+    height: 20px;
+    width: 180px;
+}
+
+/* Container for button should center align elements */
+.add_button_container {
+    display: inline-block;
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+/* Submit button for form should take up 25% of page and should be rounded */
+button[class*="add_button"], 
+button[class*="delete_button"],
+.add_button[type="submit"] {
+    border-radius: 5px;
+    width: 15%;
+    font-size: 20px;
+}
+
+/* This class is for entity tables --> Teams, Games, Players */
+.entity_view_table {
+    width: 95%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+/* All table heading elements should have background color of blue, white coloring and should be centered */
+.entity_view_table th {
+    text-align: center;
+    border: 1px solid black;
+    background-color: darkblue;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* All data elements in table should be left aligned with a black outline */
+.entity_view_table td {
+    text-align: left;
+    border: 1px solid black;
+    padding-left: 5px;
+}
+
+/* All links in table represent the name, don't have an underline here */
+.entity_view_table a {
+    text-decoration: none;
+}
+
+/* When we hover over team name link, change text to white and background color to dark blue */
+.entity_view_table a:hover {
+    color: white;
+    background-color: darkblue;
+}
+
+/* Styling for link to go back to last page */
+.back_link {
+    background-color: darkgray;
+    padding: 10px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    color: blue;
+    border: 1px solid black;
+    outline-width: thick;
+    float: left;
+}
+
+/* For error messages printed to screen */
+.error_message {
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    color: red;
+    margin-bottom: 20px;
+}
+
+/* Radio options that should go on one line in game menu */
+.game_radio_options {
+    font-weight: bold; 
+    margin-bottom: 30px; 
+    display: block; 
+    font-size: 20px;
+    margin-left: 25px;
+}
+    
+/* Fieldset for different areas of game */
+.game_fieldset {
+    margin-right: 20px;
+    border: 2px solid darkblue;
+    margin-top: 50px;
+}
+
+/* The legend for the fieldset should be 20px and bold */
+.game_fieldset legend {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* For table data inside of player stats */
+.player_stat_td {
+    width: 80%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+}
+
+ /* Span contains labels withing game page */
+.basic_game_span {
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 25px;
+}
+
+/* Labels to show on game page */
+.basic_game_label {
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    color: darkblue;
+    text-decoration: underline;
+}
+
+/* Header for team stat viewing */
+.team_stat_header {
+    margin-top: 50px;
+    margin-left: 25px;
+    color: darkblue;
+    text-align: left;
+}
+
+/* Table class for player stats view */
+.player_stat_table {
+    border: 1px solid darkblue;
+    margin: 0 auto;
+}
+
+/* Place padding inside of data elements for stat table */
+.player_stat_table td {
+    padding: 8px 50px 8px 50px;
+    font-size: 16px;
+}
+
+/* Key for player statistics */
+.stat_key {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}

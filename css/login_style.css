@@ -1,0 +1,190 @@
+/* This styling is to adjust the size of the background picture */
+html, body {
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+/* This is to place background image appropriately on screen */
+.background {
+    margin: -10px;
+    background-image: url(../img/baseball_background.jpg);
+    min-height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+}
+
+/* This is the main class for screen content */
+.main_interaction_div {
+    min-height: 300px;
+    width: 50%;
+    margin: 0 auto;
+    background-color: white;
+    border: 5px solid darkblue;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* The span holding the company header (self-defined) */
+.company_symbol {
+    text-shadow: 5px 4px lightblue;
+    font-size: 60px;
+    color: darkblue;
+}
+
+/* Styles for the form to login */
+#login_form {
+    margin-top: 30px;
+}
+
+/* The container to hold sign up form elements */
+#sign_up_container {
+    width: 80%; 
+    margin-top: 20px; 
+    margin: auto;
+}
+
+/* Adjust the form inputs to have light blue outline */
+#login_form input {
+    border: 1px solid darkblue;
+    width: 50%;
+    height: 50px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+/* When the input elements are clicked on, change background color */
+#login_form input:focus {
+    background-color: lightblue;
+}
+
+/* The submit button to submit the form should be blue */
+#login_form input[type=submit], #sign_up_form button  {
+    background-color: darkblue;
+    color: white;
+    padding-left: 0px;
+}
+
+/* Adjust buttons in sign-up form to be a little bigger */
+#sign_up_form button {
+    width: 75px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+/* When hovering over button, the color should change to white and text blue */
+#login_form input[type=submit]:hover, #sign_up_form button:hover {
+    color: darkblue;
+    background-color: white;
+}
+
+/* Span holding links style */
+.link_span {
+    display: block;
+    margin-top: 20px;
+}
+
+/* All link spans should not have underlining */
+span.link_span a {
+    text-decoration: none;
+    color: darkblue;
+}
+
+/* When the link is hovered over, make the background color dark blue and text color white */
+span.link_span a:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+/* This is to create a divider between links in span */
+.link_divider {
+    color: darkblue;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+/* Error message on bad signup/login info */
+.error_message_div {
+    margin-top: 15px;
+    color: crimson;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* For signup form input elements */
+#sign_up_form input[type=text], #sign_up_form input[type=password] {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 1px solid darkblue;
+    background: #f1f1f1;
+    font-size: 15px;
+}
+
+/* When signup form input elements are pressed on */
+#sign_up_form input[type=text]:focus, #sign_up_form input[type=password]:focus {
+    background-color: lightblue;
+}
+
+/* These are the labels that coincide with input form elements */
+.sign_up_label {
+    float: left;
+    text-align: left;
+}
+
+/* This is to space out radio options in signup form */
+span input[type=radio] {
+    margin-left: 15px;
+}
+
+/* This is the span to recover information */
+.lookup_span {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* The label in the lookup span should have adjusted size */
+.lookup_span label {
+    font-weight: bold;
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+/* The input should be wider in span */
+.lookup_span input {
+    width: 200px;
+    margin-right: 15px;
+    border: 1px solid darkblue;
+    height: 30px;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+/* Button coloring should be colored differently and size adjusted */
+.lookup_span button {
+    background-color: darkblue;
+    color: white;
+    width: 75px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+/* When hovering over button, the color should change to white and text blue */
+.lookup_span button:hover, #lookup_span button:hover {
+    color: darkblue;
+    background-color: white;
+}
